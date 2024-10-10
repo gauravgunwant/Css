@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selector </title>
+    <!-- Internal styling! -->
+    <style> 
+        #Heading_first {
+            color: beige;
+        }
+
+        .Paragraph_first {
+            color: blue;
+        }
+
+        /* Group selector! */
+        h2,p2{
+            color: chocolate;
+        }
+
+        /* Descendant Selector */
+        #ParentX p3{
+            color: darkred;
+        }
+
+        p3{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- Id = unique identifier assigned to single HTML element! accessed and created by # , it creats div id -->
+    <h1 id="Heading_first">Selected by ID!</h1>
+    
+    <!-- Class= allows grouping of multiple  HTML elements to style them collectively, accessed and created by . it will create div class -->
+     
+    <p class="Paragraph_first">Selected by class!</p>
+
+    <h2>Heading 2 by group selection</h2>
+    <p2> para 2 by group selection! </p2>
+
+    <!-- Descendant Selector, it's used to style nested specific elements-->
+
+    <div id="ParentX">
+        <p3>Hello! this is child of parent X</p3>
+    </div>
+
+    <p3>Hello this is not a child of parentX</p3>
+
+    <!-- At the end we learnt, basic syntax, including styles, HTML dom and its attributes! ,color property, comments, MDN documentation, Browser Tools, Selectors.. -->
+    
+</body>
+</html>
